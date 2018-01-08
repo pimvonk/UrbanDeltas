@@ -123,14 +123,16 @@ body {
         -webkit-transition: -webkit-transform 0.2s;
         -moz-transition: -moz-transform 0.2s;
         transition: transform 0.2s;
-        border-bottom: 1px solid white;
-        background-color: rgba(255, 255, 255, 0.9); }
+        /*border-bottom: 1px solid white; */
+        /*background-color: rgba(255, 255, 255, 0.9); */
+      }
         #mainNav.is-fixed .navbar-brand {
           color: #212529; }
           #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
             color: #0085A1; }
         #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-          color: #212529; }
+            display: none;
+            color: #212529; }
           #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
             color: #0085A1; }
       #mainNav.is-visible {
@@ -244,6 +246,17 @@ h1.titel-homepage{
 .logo-urbandelta img{
     max-height: 70px;
     display: block;
+}
+
+.navbar-nav > li.nav-item > a.active-menu:after{
+    background: none repeat scroll 0 0 #ffffff;
+     bottom: -4px;
+     content: "";
+     display: block;
+     height: 2px;
+     position: relative;
+     width: 60%;
+    left: 20%;
 }
 
 
